@@ -9,3 +9,5 @@ For this project I use Python as language of Programming.
 I follow this course on [udemy](https://www.udemy.com/course/data-structures-and-algorithms-bootcamp-in-python/)
 
 I'm passionate about math.
+For this project I will use vim 
+
