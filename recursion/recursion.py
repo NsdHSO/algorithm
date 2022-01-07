@@ -56,6 +56,7 @@ def powerNumber(base, exponent):
 # print(powerNumber(2.2, 7)i)
 
 def greatestCommon(first, last):
+	assert last >0, "Modulo at 0"
 	if last == 0 :
 		return first
 
