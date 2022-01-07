@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import sys 
+import math
 # sys.setrecursionlimit(150)
 
 def showDollRussian(doll):
@@ -56,11 +57,27 @@ def powerNumber(base, exponent):
 # print(powerNumber(2.2, 7)i)
 
 def greatestCommon(first, last):
-	assert last >0, "Modulo at 0"
+	if(first < 0):
+		first = -1 * first
+	if(last < 0 ):
+		last = -1 * last
+
+	assert int(first) == first and int(last) == last , "Modulo at 0"
 	if last == 0 :
 		return first
 
 	return greatestCommon(last, first % last)
-print(greatestCommon(-48.3,0))
+# print(greatestCommon(-48,0))
+# 2n = 
+def decimalNumber(number):
+	assert int(number), "Should to be a integer number"
+	if(number ==0):
+		return 0
+	else:
+		return number % 2 + 10 * decimalNumber(int(number/2))
+
+
+print(decimalNumber(-10))
+
 	 
 	
