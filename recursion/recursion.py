@@ -77,7 +77,37 @@ def decimalNumber(number):
 		return number % 2 + 10 * decimalNumber(int(number/2))
 
 
-print(decimalNumber(-10))
+# print(decimalNumber(-10))
 
-	 
+array = [1,2,[[[[[4]]]],3,[[[[2,[2,[22]]]]]]]]
+def flatten(n):
+	results = []
+	for result in n:
+		if type(result) is list:
+			print("if",result)
+			results.extend(flatten(result))
+		else: 
+			print('elese', result)
+			results.append(result)
+	return results
+
+# print(flatten(array))
+
+array = ["sami", 'andrei', 'ema']
+
+def capitalize(arr):
+	results = []
+	if(len(arr) == 0):
+		return results
+	results.append(arr[0][0].upper() + arr[0][1:])
+	return results+capitalize(arr[1:])
 	
+print(capitalize(array))
+
+def sum (n):
+	if n<=0:
+		return 0
+	else:
+		return n+ sum(n-1)
+
+print(sum(3))
