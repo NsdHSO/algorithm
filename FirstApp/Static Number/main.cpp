@@ -158,11 +158,31 @@ int conbin(int k, int n){
         return 1;
     }return conbin(k-1, n-1) + conbin(k-1,n);
 }
+int fun (int n)
+
+       {
+
+int x=1, k;
+
+if (n==1) return x;
+
+for (k=1; k<n; ++k){
+    cout<<"FUN(k)"<< "k="<<k<<endl;
+    cout<<"FUN(n-k)"<<endl<<endl;
+    cout<<x<<"=x"<<endl;
+   x=x + fun(k) * fun(n-k);
+
+    }
+return x;
+
+        }
 
 int main(int argc, const char * argv[]) {
     for (int i = 0; i<11; i++) {
         F[i]=-1;
     }
+    
+    cout<<fun(4)<<endl ;
 //    cout<< func(a)<< endl;
 //    cout<< endl << func1(a)<<endl;
     
