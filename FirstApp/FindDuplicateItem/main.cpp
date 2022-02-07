@@ -140,11 +140,10 @@ int popItems(struct Array *array, int index){
     deleteItems(array, index);
     return returns;
 }
-int ij = 0;
 
 struct Array selectionSorting(struct Array array){
     struct Array newArray;
-    ij = array.length;
+    int ij = array.length;
     newArray.length = 1;
     newArray.items = (int *)(malloc(sizeof(int) * newArray.length));
     deleteItems(&newArray, 0);
