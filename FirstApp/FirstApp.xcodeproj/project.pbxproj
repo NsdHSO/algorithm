@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE5564D8278FFD5D00F9DA74 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE5564D7278FFD5D00F9DA74 /* main.cpp */; };
 		AE5564E327900B8000F9DA74 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE5564E227900B8000F9DA74 /* main.cpp */; };
+		AE65C81B27ABB96400DEF3A9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE65C81A27ABB96400DEF3A9 /* main.cpp */; };
 		AE6FBC0C279144B10039B7B0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE6FBC0B279144B10039B7B0 /* main.cpp */; };
 		AE6FBC1727957C5F0039B7B0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE6FBC1627957C5F0039B7B0 /* main.cpp */; };
 		AEBD215F278BEF360052EEA0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEBD215E278BEF360052EEA0 /* main.cpp */; };
@@ -25,6 +26,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		AE5564DE27900B8000F9DA74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AE65C81627ABB96400DEF3A9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -67,6 +77,8 @@
 		AE5564D7278FFD5D00F9DA74 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE5564E027900B8000F9DA74 /* Constructor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Constructor; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5564E227900B8000F9DA74 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AE65C81827ABB96400DEF3A9 /* FindDuplicateItem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FindDuplicateItem; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE65C81A27ABB96400DEF3A9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE6FBC09279144B10039B7B0 /* Static Number */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Static Number"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6FBC0B279144B10039B7B0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AE6FBC1427957C5F0039B7B0 /* Iteration Review */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Iteration Review"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +96,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AE5564DD27900B8000F9DA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE65C81527ABB96400DEF3A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,6 +149,14 @@
 			path = Constructor;
 			sourceTree = "<group>";
 		};
+		AE65C81927ABB96400DEF3A9 /* FindDuplicateItem */ = {
+			isa = PBXGroup;
+			children = (
+				AE65C81A27ABB96400DEF3A9 /* main.cpp */,
+			);
+			path = FindDuplicateItem;
+			sourceTree = "<group>";
+		};
 		AE6FBC0A279144B10039B7B0 /* Static Number */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +181,7 @@
 				AE5564E127900B8000F9DA74 /* Constructor */,
 				AE6FBC0A279144B10039B7B0 /* Static Number */,
 				AE6FBC1527957C5F0039B7B0 /* Iteration Review */,
+				AE65C81927ABB96400DEF3A9 /* FindDuplicateItem */,
 				AEBD215C278BEF360052EEA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,6 +194,7 @@
 				AE5564E027900B8000F9DA74 /* Constructor */,
 				AE6FBC09279144B10039B7B0 /* Static Number */,
 				AE6FBC1427957C5F0039B7B0 /* Iteration Review */,
+				AE65C81827ABB96400DEF3A9 /* FindDuplicateItem */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +242,23 @@
 			name = Constructor;
 			productName = Constructor;
 			productReference = AE5564E027900B8000F9DA74 /* Constructor */;
+			productType = "com.apple.product-type.tool";
+		};
+		AE65C81727ABB96400DEF3A9 /* FindDuplicateItem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE65C81E27ABB96400DEF3A9 /* Build configuration list for PBXNativeTarget "FindDuplicateItem" */;
+			buildPhases = (
+				AE65C81427ABB96400DEF3A9 /* Sources */,
+				AE65C81527ABB96400DEF3A9 /* Frameworks */,
+				AE65C81627ABB96400DEF3A9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindDuplicateItem;
+			productName = FindDuplicateItem;
+			productReference = AE65C81827ABB96400DEF3A9 /* FindDuplicateItem */;
 			productType = "com.apple.product-type.tool";
 		};
 		AE6FBC08279144B10039B7B0 /* Static Number */ = {
@@ -281,6 +327,9 @@
 					AE5564DF27900B8000F9DA74 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
+					AE65C81727ABB96400DEF3A9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					AE6FBC08279144B10039B7B0 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -310,6 +359,7 @@
 				AE5564DF27900B8000F9DA74 /* Constructor */,
 				AE6FBC08279144B10039B7B0 /* Static Number */,
 				AE6FBC1327957C5F0039B7B0 /* Iteration Review */,
+				AE65C81727ABB96400DEF3A9 /* FindDuplicateItem */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5564E327900B8000F9DA74 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE65C81427ABB96400DEF3A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE65C81B27ABB96400DEF3A9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +447,26 @@
 			name = Debug;
 		};
 		AE5564E627900B8000F9DA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A9MQH699U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE65C81C27ABB96400DEF3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9A9MQH699U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE65C81D27ABB96400DEF3A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +664,15 @@
 			buildConfigurations = (
 				AE5564E527900B8000F9DA74 /* Debug */,
 				AE5564E627900B8000F9DA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE65C81E27ABB96400DEF3A9 /* Build configuration list for PBXNativeTarget "FindDuplicateItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE65C81C27ABB96400DEF3A9 /* Debug */,
+				AE65C81D27ABB96400DEF3A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
